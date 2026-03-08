@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Encodage de la page (UTF-8) -->
+    <meta charset="UTF-8"> 
+    <!-- Cette balise rend le site "responsive" (adapté aux écrans de toutes tailles) -->
+    <meta name="viewport" content="width=device-width , initial-scale=1.0"> 
+    <!-- Auteur du site -->
+    <meta name="Author" content="Victor BARROIS"> 
+    <meta name="Author" content="Cost CASA">
+    <meta name="Author" content="Julien NAM"> 
+    <!-- Éditeur ou organisme responsable du site -->
+    <meta name="Publisher" content="IUT NICE"> 
+    <!-- Courte description du site -->
+    <meta name="Description" content="Mini projet de site web par des étudiants en GEII à Nice"> 
+    <!-- Titre de la page affiché dans l’onglet du navigateur -->
+    <title>Génie électrique et informatique industrielle</title> 
+
+    <!-- Icône affichée dans l’onglet du navigateur -->
+    <link rel="icon" type="image/png" href="images/logo_geii.png"> 
+    <!-- Lien vers la feuille de style CSS -->
+    <link rel="stylesheet" href="css/style.css"> 
+
+    <!-- Lien vers le script JavaScript gérant la météo -->
+    <script src="js/meteo.js" defer> </script> 
+    <!-- Lien vers le script JavaScript gérant la navigation du site-->
+    <script src="js/navigation.js" defer> </script> 
+</head>
+
+<body>
+    <!-- Haut de page -->
+    <header>
+        <!-- Logos + titre -->
+        <div class="logo">
+            <img src="images/logo_IUT_Université_Nice_Côte_d'Azur.png" alt="logo IUT de Nice" width="130px" id="log-IUT">
+            <h1>Étudiants en génie électrique et informatique industrielle à L'IUT Nice côte d'azur</h1>
+            <img src="images/logo_geii.png" alt="logo GEII" width="70" id="logo-GEII">
+        </div>
+
+        <!-- Icône du menu burger -->
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span><p>menu</p></span>
+        </div>
+
+        <!-- Menu de navigation -->
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+
+                <li class="dropdown">
+                    <a href="CV/cv.html">CV</a>
+                    <ul class="submenu">
+                        <li><a href="CV/cv_Victor_BARROIS.html">Victor BARROIS</a></li>
+                        <li><a href="CV/cv_Cost_CASA.html">Cost CASA</a></li>
+                        <li><a href="CV/cv_Julien_NAM.html">Julien NAM</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="CV/contact.html">Contact</a></li>
+                <li><a href="CV/expériences.html">Expériences</a></li>
+                <li><a href="CV/ressources.html">Ressources</a></li>
+                <li><a href="CV/sae.html">Ressources</a></li>
+
+                <li class="dropdown">
+                    <a href="geii/geii.html">GEII</a>
+                    <ul class="submenu">
+                        <li><a href="geii/filtre_actif.html">Filtre actif</a></li>
+                        <li><a href="geii/filtre_passif.html">Filtre passif</a></li>
+                        <li><a href="geii/pont_diviseur.html">Pont diviseur</a></li>
+                        <li><a href="geii/puissance_résistance.html">Puissance résistance</a></li>
+                        <li><a href="geii/regime_alternatif.html">Régime alternatif</a></li>
+                        <li><a href="geii/résistance_protection.html">Résistance protection</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenu de la page -->
+    <main>
+        <section class="conteneur-intro-meteo">
+            <!-- Bloc météo -->
+            <article id="meteo"></article>
+
+            <!-- Introduction -->
+            <article class="intro">
+                <h2><p title="Notre tout premier site">Bienvenue sur notre mini-site GEII</p></h2>
+                <p>Ce site présente notre parcours (CV), nos travaux (SAE), des ressources pédagogiques GEII et des démonstrations interactives
+                    (calculs, schémas, filtres...). Parcourez les sections via le menu ci-dessous.</p>
+            </article>
+        </section>
+        
+
+        <!-- Liens vignettes -->
+        <section class="grid-accueil">
+            <article class="card">
+                <a href="CV/cv.html">
+                    <h3>CV des étudiants</h3>
+                    <p>Consultez nos CV synthétiques et contactez-nous pour des stages ou alternances.</p>
+                </a>
+            </article>
+
+            <article class="card">
+                <a href="CV/contact.html">
+                    <h3>Contact</h3>
+                    <p>Explications, schémas et calculs sur le régime continu/alternatif, filtres et puissance.</p>
+                </a>
+            </article>
+
+            <article class="card">
+                <a href="GEII/geii.html">
+                    <h3>Section GEII</h3>
+                    <p>Explications, schémas et calculs sur le régime continu/alternatif, filtres et puissance.</p>
+                </a>
+            </article>
+
+            <article class="card">
+                <a href="CV/expériences.html">
+                    <h3>Expériences</h3>
+                    <p>Tutoriels, SAE, ressources et liens utiles pour le BUT GEII.</p>
+                </a>
+            </article>
+
+            <article class="card">
+                <a href="CV/ressources.html">
+                    <h3>Ressources</h3>
+                    <p>Tutoriels, SAE, ressources et liens utiles pour le BUT GEII.</p>
+                </a>
+            </article>
+
+            <article class="card">
+                <a href="CV/sae.html">
+                    <h3>Projets</h3>
+                    <p>Tutoriels, SAE, ressources et liens utiles pour le BUT GEII.</p>
+                </a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pied de page --> 
+    <footer>
+        <p>&copy; 2025 — Victor BARROIS, Cost CASA, Julien NAM</p>
+        <p>IUT Nice Côte d'Azur — Département GEII</p>
+        <p>BUT3 ESE</p>
+    </footer> 
+</body>
+</html>
